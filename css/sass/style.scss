@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+$font: 'VT323', monospace;
+
+$yellow: #ED9B40;
+$red: #BA3B46;
+$dirt: #AA8F66;
+$white: #FFEEDB;
+$turqoise :#61C9A8;
+
+body {
+    font-family: $font;
+    font-size: 16px;
+    background: $yellow;
+}
+header {
+    text-align: center;
+    h1 {
+      font-size: 5em;  
+      color: $red;
+    }
+}
+
+#gameboard {
+    margin: 25px auto;
+    height: 400px;
+    width: 400px;
+    border: 1px solid $yellow;
+    .row .square{
+        float: left;
+        width: calc(400px/3);
+        height: calc(400px/3);
+        box-sizing: border-box;
+        border: 1px solid $dirt;
+    }
+//    #frame {
+//        position: absolute;
+//        height: 387px;
+//        width: 387px;
+//        border: 10px solid $yellow;
+//        
+//    }
+}
+.selection {
+    margin: 20px auto;
+    height: 100px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    transition: all 1.5s ease-in-out;
+    p {
+        padding: 20px;
+    }
+    .cross, .circle {
+        width: 75px;
+        height: 75px;
+        font-size: 5em;
+        text-align: center;
+        color: $dirt;
+        &:hover {
+            cursor: pointer;
+            color: $turqoise;
+        }
+    }
+}
+
+.deleteOption {
+    .cross, .circle {
+        &:hover {
+        cursor: none;
+        color: $dirt;
+        } 
+    }
+}
+
+.active {
+    i {
+        color: $turqoise; 
+    }
+}
+
+.marked {
+    text-align: center;
+    background: $red;
+    i {
+        font-size: 8rem;
+        text-align: center;
+        color: $turqoise;
+    }
+}
+
+#buttons {
+    margin: 50px auto;
+    text-align: center;
+    #play {
+        background: $white;
+        font-family: $font;
+        font-size: 1.5em;
+        text-shadow: 1px 3px 1px $dirt;
+        color: $red;
+        height: 40px;
+        width: 100px;
+        border-radius: 50px;
+        box-shadow: 1px 5px 1px $dirt;
+        border: none;
+        outline: none;
+        &:active {
+            transform: translateY(5px);
+        }
+    }
+    #playAgain {
+        display: none;
+    }
+}

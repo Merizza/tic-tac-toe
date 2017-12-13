@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Tic Tac Toe </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Tic Tac Toe</h1>       
+        </header>
+        <div id="gameboard">
+            <div class="row">
+                <div class="square" id="square1"></div>
+                <div class="square" id="square2"></div>
+                <div class="square" id="square3"></div>
+            </div>
+            <div class="row">
+                <div class="square" id="square4"></div>
+                <div class="square" id="square5"></div>
+                <div class="square" id="square6"></div>
+            </div>
+            <div class="row">
+                <div class="square" id="square7"></div>
+                <div class="square" id="square8"></div>
+                <div class="square" id="square9"></div>
+            </div>
+            <!--<div id="frame"></div>-->
+        </div>
+        <div class="selection">
+            <div class="cross">
+                <i class="fa fa-times"></i>
+            </div>
+            <div id="option"><p>Which one do you wanna play as?</p></div>
+            <div class="circle">
+                 <i class="fa fa-circle-o"></i>
+            </div>
+        </div>
+        <div id="buttons">
+                <button id="play">Play</button>
+                <button id="playAgain">Play Again</button>
+        </div>
+        <div id="result"></div>
+        
+        
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
+<!--
+User Story: I can play a game of Tic Tac Toe with the computer.
+User Story: My game will reset as soon as it's over so I can play again.
+User Story: I can choose whether I want to play as X or O.
+-->
